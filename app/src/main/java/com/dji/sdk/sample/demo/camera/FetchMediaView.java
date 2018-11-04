@@ -3,6 +3,7 @@ package com.dji.sdk.sample.demo.camera;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Environment;
+import android.os.Handler;
 
 import com.dji.sdk.sample.R;
 import com.dji.sdk.sample.internal.controller.DJISampleApplication;
@@ -150,9 +151,19 @@ public class FetchMediaView extends BaseThreeBtnView {
         if (ModuleVerificationUtil.isCameraModuleAvailable()
                 && media != null
                 && mediaManager != null) {
-            File destDir = new File(Environment.getExternalStorageDirectory().
-                    getPath() + "/Dji_Sdk_Test/");
+            File path = Environment.getExternalStoragePublicDirectory(
+                    Environment.DIRECTORY_PICTURES + "/CROWDGUARD/");
+            File destDir = new File(path, "output.mp4");
             media.fetchFileData(destDir, "testName", new DownloadHandler<String>());
+            final Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+
+
+
+                }
+            }, 4000);
         }
     }
 
@@ -190,7 +201,7 @@ public class FetchMediaView extends BaseThreeBtnView {
 
                             if (null != djiMedias) {
                                 if (!djiMedias.isEmpty()) {
-                                    media = djiMedias.get(0);
+                                    media = djiMedias.get(djiMedias.size() - 1);
                                     str = "Total Media files:" + djiMedias.size() + "\n" + "Media 1: " +
                                             djiMedias.get(0).getFileName();
                                     changeDescription(str);

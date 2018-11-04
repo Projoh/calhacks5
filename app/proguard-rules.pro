@@ -73,3 +73,4 @@
 -keep class com.lmax.disruptor.** {
     *;
 }
+-ignorewarnings

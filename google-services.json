@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "667131119752",
+    "firebase_url": "https://crowdguard-calhacks.firebaseio.com",
+    "project_id": "crowdguard-calhacks",
+    "storage_bucket": "crowdguard-calhacks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667131119752:android:b74adc4e7bfcccef",
+        "android_client_info": {
+          "package_name": "com.dji.sdk.sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "667131119752-6nj0sv3btb137uojdhcjocvv8kelc4kp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dji.sdk.sample",
+            "certificate_hash": "7b1ea744b555519f2259b5ea6eac0c687ceeb3b4"
+          }
+        },
+        {
+          "client_id": "667131119752-jajghtbf45d15tcn9c8a4mf921hibqnn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXcbuov5dHUbjZbJyQ7-rvXyKmYjPQuUQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "667131119752-jajghtbf45d15tcn9c8a4mf921hibqnn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
